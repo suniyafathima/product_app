@@ -53,11 +53,13 @@ class _ProductListScreenState extends State<ProductListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xfff4f6fb),
+      backgroundColor:  Colors.white,
       appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.black,
+         elevation: 0,
+        scrolledUnderElevation: 0, 
+       surfaceTintColor: Colors.transparent,
+      backgroundColor:  Colors.transparent,
+ foregroundColor: Colors.black,
         title: const Text(
           'Discover',
           style: TextStyle(fontWeight: FontWeight.bold),
@@ -74,6 +76,10 @@ class _ProductListScreenState extends State<ProductListScreen> {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(14),
+                border: Border.all(
+                  color: Colors.grey.withAlpha(50),
+                  width: 1,
+                ),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black.withAlpha(15),
